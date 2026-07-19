@@ -5,3 +5,6 @@ Thumbs.db
 .idea/
 .vscode/
 getamazednow-ai-content-fill.xlsx
+
+# Private commercial artefacts — never publish to the public Pages repo
+business-pack/

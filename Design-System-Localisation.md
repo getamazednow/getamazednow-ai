@@ -14,3 +14,14 @@ master stays byte-identical; project-specific values live here.
 - **Accent text on white:** `signalDeep #2E7DA6` (AA), never Signal/Stone as body text.
 - **Type:** Poppins (display/heading) + Inter (body), Google Fonts.
 - **Favicon:** `assets/logo/Getamazednow-AI-Favicon.svg` (+ PNG fallbacks).
+
+## Business pack (`business-pack/`, git-ignored — private)
+Localised artefacts, Design System v1.2:
+1. **Artefacts:** Business Plan · Platform Product Feature Set · Product Roadmap (Word, whitepaper cover **W2 · Framed lower hero**, default `Hero-Lattice` image) + Executive Summary deck (PowerPoint, **P1 centred** title, Ink sandwich, `Slide-BG-Ink`).
+2. **Version + status:** current set **v2.0 · DRAFT** (July 2026, repositioned as the continuous AI-assurance layer post investor review; adds Design Partner Prospectus v2.0). v1.0 originals retained alongside.
+3. **Legacy colour remap:** none — built natively on brand tokens.
+4. **Reference implementation:** `business-pack/Getamazednow_AI_Business_Plan_v2.0.docx` (cover + running header/footer per spec §3–§5, §7–§8).
+
+## Site pages (public)
+- `index.html` repositioned to assurance-layer messaging (Jul 2026): Govern verb **prove it**, Architect carries a `plane__vision` pill, engagement strip (`.engage`), motto *see it, prove it, stand behind it*.
+- `trust.html` + `privacy.html` — content pages on the `.page` pattern (topbar identity per §6, Ink footer).

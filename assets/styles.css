@@ -277,6 +277,25 @@ a { text-decoration: none; color: inherit; }
 .tile__links a:hover { text-decoration: underline; }
 .tile__links a.muted { color: var(--gai-neutral-400); pointer-events: none; }
 
+/* Vision pill on the Architect plane */
+.plane__vision {
+  display: inline-block; vertical-align: middle; margin-left: 6px;
+  font-family: var(--gai-font-body); font-size: 10px; font-weight: 500;
+  letter-spacing: .08em; text-transform: uppercase;
+  padding: 2px 9px; border-radius: var(--gai-radius-pill);
+  background: var(--gai-neutral-100); color: var(--gai-neutral-500);
+  border: 0.5px solid var(--gai-neutral-200);
+}
+
+/* Working-with-us engagement strip */
+.engage {
+  max-width: 940px;
+  margin: clamp(20px, 4vh, 36px) auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--gai-space-4);
+}
+
 /* Why-us credibility band */
 .whyus {
   max-width: 940px;
@@ -295,6 +314,35 @@ a { text-decoration: none; color: inherit; }
 .whyus__lead strong { color: var(--gai-ink); font-weight: 600; }
 .whyus__tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: var(--gai-space-3); }
 .tag { font-size: 11px; padding: 4px 11px; border-radius: var(--gai-radius-pill); background: var(--gai-neutral-100); color: var(--gai-neutral-600); }
+
+/* ---------- Content pages (trust, privacy) ------------------------------ */
+.page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: clamp(28px, 5vh, 56px) clamp(16px, 4vw, 44px) clamp(40px, 7vh, 72px);
+}
+.page h1 {
+  font-family: var(--gai-font-display); font-weight: 700;
+  font-size: clamp(26px, 3.2vw, 36px); color: var(--gai-ink);
+  margin: 0 0 var(--gai-space-2);
+}
+.page h2 {
+  font-family: var(--gai-font-display); font-weight: 600;
+  font-size: var(--gai-text-lg); color: var(--gai-ink);
+  margin: var(--gai-space-6) 0 var(--gai-space-2);
+}
+.page p, .page li { font-size: var(--gai-text-sm); line-height: 1.65; color: var(--gai-neutral-600); }
+.page ul { padding-left: 1.2em; margin: var(--gai-space-2) 0; }
+.page .page__meta { font-size: var(--gai-text-xs); color: var(--gai-neutral-400); margin-bottom: var(--gai-space-5); }
+.page a { color: var(--gai-signal-deep); }
+.page a:hover { text-decoration: underline; }
+.page .callout {
+  border-left: 3px solid var(--gai-signal-deep);
+  background: var(--gai-neutral-50);
+  border-radius: var(--gai-radius-sm);
+  padding: var(--gai-space-3) var(--gai-space-4);
+  margin: var(--gai-space-4) 0;
+}
 
 /* ---------- Footer / contact ------------------------------------------- */
 .footer { background: var(--gai-ink); }
@@ -320,6 +368,7 @@ a { text-decoration: none; color: inherit; }
   .spine__link { width: 2px; height: 24px; margin: 0 auto; align-self: center; }
   .spine__link::after { right: -3px; top: auto; bottom: -1px; transform: rotate(135deg); }
   .proof { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .engage { grid-template-columns: 1fr; }
   .whyus { grid-template-columns: 1fr; }
   .topbar__nav { display: none; }
 }
