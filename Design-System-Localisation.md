@@ -22,6 +22,13 @@ Localised artefacts, Design System v1.2:
 3. **Legacy colour remap:** none — built natively on brand tokens.
 4. **Reference implementation:** `business-pack/Getamazednow_AI_Business_Plan_v2.0.docx` (cover + running header/footer per spec §3–§5, §7–§8).
 
+## Naming hierarchy (decided Jul 2026)
+- **Brand essence (lockup only):** "Practical AI. Possible Futures." — lives inside the logo lockup, never repeated as page text.
+- **Company positioning (Getamazednow AI):** "the continuous AI-assurance layer" — topbar, meta/SEO, investor pack.
+- **Product suite:** **Getamazednow Assure™** — tagline "see it, prove it, stand behind it" (verbs map to Observe / Evidence / Architect-vision). Tiers: Assure · Observe, Assure · Evidence.
+- **Assure wordmark treatment (proposed for design-system master v1.3):** Poppins 800, letter-spacing .015em; `signalDeep #2E7DA6` on light surfaces (AA), `Signal #5FA8CC` on Ink. Web class: `.assure` / `.assure--on-ink`. No new colours or fonts — existing tokens at a heavier weight.
+- **Trademark status:** "GETAMAZEDNOW" — 0 existing AU marks (IP Australia, Jul 2026). "ASSURE" exact-word — 147 AU marks across classes; common word, own only as the compound. Use ™ (not ®); formal attorney search in classes 9 & 42 before filing.
+
 ## Site pages (public)
 - `index.html` repositioned to assurance-layer messaging (Jul 2026): Govern verb **prove it**, Architect carries a `plane__vision` pill, engagement strip (`.engage`), motto *see it, prove it, stand behind it*.
 - `trust.html` + `privacy.html` — content pages on the `.page` pattern (topbar identity per §6, Ink footer).

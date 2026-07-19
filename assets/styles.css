@@ -277,6 +277,17 @@ a { text-decoration: none; color: inherit; }
 .tile__links a:hover { text-decoration: underline; }
 .tile__links a.muted { color: var(--gai-neutral-400); pointer-events: none; }
 
+/* Assure product wordmark — Poppins 800 in the accent colour.
+   On white/light surfaces use signalDeep (AA); on Ink surfaces use Signal. */
+.assure {
+  font-family: var(--gai-font-display);
+  font-weight: 800;
+  letter-spacing: .015em;
+  color: var(--gai-signal-deep);
+  font-style: normal;
+}
+.assure--on-ink { color: var(--gai-signal); }
+
 /* Vision pill on the Architect plane */
 .plane__vision {
   display: inline-block; vertical-align: middle; margin-left: 6px;
