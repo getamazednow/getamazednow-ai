@@ -264,6 +264,15 @@ a { text-decoration: none; color: inherit; }
   font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--gai-neutral-400);
 }
 .tile__tag svg { width: 15px; height: 15px; stroke: var(--gai-signal-deep); fill: none; stroke-width: 2; }
+.tile__head { display: flex; align-items: center; justify-content: space-between; gap: var(--gai-space-2); }
+.tile__status {
+  flex: none;
+  font-size: 9px; letter-spacing: .07em; text-transform: uppercase;
+  color: var(--gai-warning);
+  border: 0.5px solid var(--gai-warning);
+  border-radius: var(--gai-radius-pill);
+  padding: 2px 8px; line-height: 1.4;
+}
 .tile__name {
   margin: var(--gai-space-2) 0 4px;
   font-family: var(--gai-font-display);
