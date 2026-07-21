@@ -273,6 +273,10 @@ a { text-decoration: none; color: inherit; }
   border-radius: var(--gai-radius-pill);
   padding: 2px 8px; line-height: 1.4;
 }
+.tile__status--live {
+  color: var(--gai-success-on-ink);
+  border-color: var(--gai-success-on-ink);
+}
 .tile__name {
   margin: var(--gai-space-2) 0 4px;
   font-family: var(--gai-font-display);
