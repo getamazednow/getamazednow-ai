@@ -285,10 +285,40 @@ a { text-decoration: none; color: inherit; }
   color: var(--gai-ink);
 }
 .tile__desc { margin: 0 0 var(--gai-space-3); font-size: var(--gai-text-xs); line-height: 1.5; color: var(--gai-neutral-500); }
-.tile__links { margin-top: auto; display: flex; gap: var(--gai-space-3); flex-wrap: wrap; }
-.tile__links a { font-size: var(--gai-text-xs); font-weight: 500; color: var(--gai-signal-deep); }
-.tile__links a:hover { text-decoration: underline; }
-.tile__links a.muted { color: var(--gai-neutral-400); pointer-events: none; }
+/* Uniform action pills — every tile carries the same three routes
+   (Demo · Product Vision · Source), stacked so labels never collide.
+   Green = available, grey = not yet. Same pill treatment as .tile__status. */
+.tile__links {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.tile__links a {
+  font-size: 9px;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  padding: 3px 10px;
+  border-radius: var(--gai-radius-pill);
+  border: 0.5px solid var(--gai-success);
+  color: #fff;
+  background: var(--gai-success);
+  white-space: nowrap;
+  transition: background-color .15s ease, border-color .15s ease;
+}
+.tile__links a:hover {
+  text-decoration: none;
+  background: var(--gai-ink);
+  border-color: var(--gai-ink);
+}
+.tile__links a.muted {
+  color: var(--gai-neutral-600);
+  border-color: var(--gai-neutral-200);
+  background: var(--gai-neutral-100);
+  pointer-events: none;
+}
 
 /* Assure product wordmark — Poppins 800 in the accent colour.
    On white/light surfaces use signalDeep (AA); on Ink surfaces use Signal. */
