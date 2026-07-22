@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- WORK IN PROGRESS — not for public serving. Redirects to the front door.
+       To preview locally, comment out the two lines below (meta refresh + redirect script). -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta http-equiv="refresh" content="0; url=/" />
+  <script>if(location.hostname!=='localhost'&&location.hostname!=='127.0.0.1'){location.replace('/');}</script>
+  <title>Getamazednow AI — The continuous AI-assurance layer for regulated enterprises</title>
+  <meta name="description" content="Getamazednow AI turns the telemetry of the platforms you already run — Microsoft Agent 365, ServiceNow AI Control Tower, Datadog — into continuous, committee-grade evidence mapped to APRA CPS 230/234, SOCI and ISO/IEC 42001, designed for risk, audit and assurance review." />
+  <meta name="author" content="Duane Gomes" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Getamazednow AI — The continuous AI-assurance layer for regulated enterprises" />
+  <meta property="og:description" content="Getamazednow AI turns the telemetry of the platforms you already run — Microsoft Agent 365, ServiceNow AI Control Tower, Datadog — into continuous, committee-grade evidence mapped to APRA CPS 230/234, SOCI and ISO/IEC 42001, designed for risk, audit and assurance review." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.getamazednow.ai/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="https://www.getamazednow.ai/" />
+  <link rel="icon" href="assets/logo/Getamazednow-AI-Favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/logo/Getamazednow-AI-Favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/logo/Getamazednow-AI-Favicon-180.png" />
+
+  <!-- Fonts: Poppins (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/tokens.css" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HX6JG64QYN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HX6JG64QYN');
+  </script>
+</head>
+<body>
+
+  <!-- ======================= STICKY TOPBAR (identity) ======================= -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <img class="topbar__mark" src="assets/logo/Getamazednow-AI-Icon-Monochrome-White.svg" alt="Getamazednow AI — Tensor Node Lattice mark" />
+      <div class="topbar__id">
+        <span class="topbar__name"><span class="sig">Getamazednow AI</span> <span class="art">· the continuous AI-assurance layer</span></span>
+        <span class="topbar__byline">A Getamazednow company</span>
+      </div>
+      <span class="topbar__spacer"></span>
+      <nav class="topbar__nav">
+        <a href="#platform">Platform</a>
+        <a href="#engage">Working with us</a>
+        <a href="trust.html">Trust</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================= SCREEN 1 — the problem leads ======================= -->
+  <section class="screen1">
+
+    <div class="hero">
+      <div class="hero__copy">
+        <p class="kicker kicker--warn">The problem</p>
+        <h1 class="hero__title">Enterprises are deploying AI agents faster than they can <span class="warn">see, describe, or defend</span> them.</h1>
+        <p class="hero__lead">The gap between what leadership approved and what is actually running surfaces as audit findings, regulatory exposure, and stranded investment.</p>
+        <div class="hero__cta">
+          <a class="btn btn-ink" href="#contact">Start a conversation →</a>
+          <a class="btn btn-outline" href="#platform">See the platform →</a>
+        </div>
+      </div>
+
+      <!-- Drift visual: approved vs actually running -->
+      <div class="drift" aria-hidden="true">
+        <svg viewBox="0 0 320 150" role="img" aria-label="A diagram showing approved and actually-running lines diverging over time">
+          <polyline points="12,70 90,70 320,70" fill="none" stroke="#5FA8CC" stroke-width="2.5"/>
+          <polyline points="90,70 170,88 245,110 320,132" fill="none" stroke="#E3A253" stroke-width="2.5" stroke-dasharray="6 5"/>
+          <circle cx="90" cy="70" r="5.5" fill="#8FC3DE"/>
+          <circle cx="320" cy="70" r="5.5" fill="#5FA8CC"/>
+          <circle cx="320" cy="132" r="5.5" fill="#E3A253"/>
+          <text x="12" y="42" fill="#B7BEC2" font-family="Inter, sans-serif" font-size="12">approved</text>
+          <text x="12" y="145" fill="#E3A253" font-family="Inter, sans-serif" font-size="12">actually running</text>
+        </svg>
+        <p class="drift__cap">Repositories go stale within weeks of the roadmaps they document.</p>
+      </div>
+    </div>
+
+    <!-- Outcome metric bar: the stakes, up front -->
+    <div class="metricbar">
+      <div class="metric">
+        <div class="metric__num">Faster</div>
+        <p class="metric__label">approval cycles — because the evidence is already there.</p>
+      </div>
+      <div class="metric">
+        <div class="metric__num">Lower</div>
+        <p class="metric__label">audit &amp; remediation cost — because control is continuous.</p>
+      </div>
+      <div class="metric">
+        <div class="metric__num">Higher</div>
+        <p class="metric__label">realised return on AI — because the portfolio is visible enough to prune, fund and scale on fact.</p>
+      </div>
+    </div>
+
+    <a class="scrollcue" href="#platform">
+      The platform that closes the gap
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </a>
+
+  </section>
+
+  <!-- ======================= SCREEN 2 — the platform answers it ======================= -->
+  <section class="screen2" id="platform">
+
+    <div class="section__head">
+      <p class="kicker">Our platform</p>
+      <h2>Getamazednow <span class="assure">Assure</span> — one layer, riding the estate you already run</h2>
+      <p>Getamazednow AI builds the continuous AI-assurance layer for regulated enterprises. Its product suite — Getamazednow <span class="assure">Assure</span> — plugs into Microsoft Agent 365, ServiceNow AI Control Tower and Datadog, turning their telemetry into evidence risk, finance and engineering can all stand behind.</p>
+    </div>
+
+    <!-- Three-plane spine with dependency chain -->
+    <div class="spine">
+      <div class="plane">
+        <div class="plane__node">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <p class="plane__verb">see it</p>
+        <p class="plane__name">Observe</p>
+        <p class="plane__desc">Telemetry across the agent lifecycle — cost, latency, accuracy, drift, decision lineage. Risk, finance and engineering read the same numbers.</p>
+      </div>
+
+      <span class="spine__link" aria-hidden="true"></span>
+
+      <div class="plane">
+        <div class="plane__node">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <p class="plane__verb">prove it</p>
+        <p class="plane__name">Govern</p>
+        <p class="plane__desc">Policy expressed as executable controls over that telemetry, mapped to APRA CPS 230/234, SOCI and ISO/IEC 42001. Evidence generated continuously, not assembled quarterly.</p>
+      </div>
+
+      <span class="spine__link" aria-hidden="true"></span>
+
+      <div class="plane">
+        <div class="plane__node">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M5 8.5v3a2 2 0 002 2h10a2 2 0 002-2v-3M12 13.5v2"/></svg>
+        </div>
+        <p class="plane__verb">stand behind it</p>
+        <p class="plane__name">Architect <span class="plane__vision">Vision</span></p>
+        <p class="plane__desc">Capability maps, application portfolios and technology roadmaps maintained by agents against the live estate — the long-horizon vision, built once the assurance layer has earned its place.</p>
+      </div>
+    </div>
+
+    <p class="chain-note">Agent 365, AI Control Tower and Datadog run the agents; we turn their signals into continuous evidence mapped to APRA CPS 230/234, SOCI and ISO/IEC 42001, designed for risk, audit and assurance review. Integration surfaces, never competitors — <strong>the evidence is the product.</strong></p>
+
+    <!-- Proof tiles: live builds behind the planes -->
+    <div class="proof">
+      <article class="tile">
+        <div class="tile__head">
+          <span class="tile__tag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg> Observe</span>
+        </div>
+        <h3 class="tile__name"><span class="assure">Assure</span> Observe</h3>
+        <p class="tile__desc">A reference dashboard for observing agentic GenAI in production — cost, reliability, security and responsible-AI risk correlated by trace across seven Datadog views.</p>
+        <div class="tile__links">
+          <a href="https://observability.getamazednow.ai/demo/" rel="noopener">Demo →</a>
+          <a href="https://observability.getamazednow.ai/" rel="noopener">Product Vision →</a>
+          <a href="https://github.com/getamazednow/genai-observability-demo" rel="noopener">Source →</a>
+        </div>
+      </article>
+
+      <article class="tile">
+        <div class="tile__head">
+          <span class="tile__tag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg> Govern</span>
+        </div>
+        <h3 class="tile__name"><span class="assure">Assure</span> Govern</h3>
+        <p class="tile__desc">The governance plane, built on the Australian Digital Sovereignty Reference Architecture (ADSRA) — seven sovereignty pillars, a six-level maturity model and measurable KRIs a Risk Committee can govern.</p>
+        <div class="tile__links">
+          <a class="muted" aria-disabled="true">Demo →</a>
+          <a href="https://adsra.getamazednow.ai" rel="noopener">Product Vision →</a>
+          <a href="https://github.com/getamazednow/ADSRA" rel="noopener">Source →</a>
+        </div>
+      </article>
+
+      <article class="tile">
+        <div class="tile__head">
+          <span class="tile__tag"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M5 8.5v3a2 2 0 002 2h10a2 2 0 002-2v-3M12 13.5v2"/></svg> Architect</span>
+        </div>
+        <h3 class="tile__name"><span class="assure">Assure</span> Architect</h3>
+        <p class="tile__desc">A multi-cadence EA agent mesh that runs enterprise architecture as a continuously operating practice — five clock speeds, twelve living artefacts, thirteen agents, one orchestrator.</p>
+        <div class="tile__links">
+          <a class="muted" aria-disabled="true">Demo →</a>
+          <a href="https://mesh.getamazednow.ai" rel="noopener">Product Vision →</a>
+          <a href="https://github.com/getamazednow/Ea-Agent-Mesh" rel="noopener">Source →</a>
+        </div>
+      </article>
+
+      <article class="tile">
+        <div class="tile__head">
+          <span class="tile__tag"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Toolkit</span>
+        </div>
+        <h3 class="tile__name"><span class="assure">Assure</span> Skills</h3>
+        <p class="tile__desc">A library of Claude skills — capability mapping, brand automation and more — packaged as an installable plugin marketplace for Cowork and Claude Code. The build layer beneath the Observe, Govern and Architect planes.</p>
+        <div class="tile__links">
+          <a class="muted" aria-disabled="true">Demo →</a>
+          <a href="https://skills.getamazednow.ai" rel="noopener">Product Vision →</a>
+          <a class="muted" aria-disabled="true">Source →</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Working with us: engagement strip -->
+    <div class="section__head" id="engage" style="margin-top:var(--gai-space-8)">
+      <p class="kicker">Working with us</p>
+      <h2>Three ways in — each step earns the next</h2>
+      <p>FY27 is our validation year: every engagement is scoped to produce evidence you can take to your risk committee — and we can take to ours.</p>
+    </div>
+
+    <div class="engage">
+      <article class="tile">
+        <span class="tile__tag">4–6 weeks</span>
+        <h3 class="tile__name">Assessments</h3>
+        <p class="tile__desc">Observability Readiness or ADSRA Sovereignty Maturity — a scored baseline of your agent estate mapped to the telemetry contract, with a board-ready findings pack.</p>
+      </article>
+      <article class="tile">
+        <span class="tile__tag">8–12 weeks</span>
+        <h3 class="tile__name">Assurance Pilot</h3>
+        <p class="tile__desc">Assessment plus the MVP deployed single-tenant or inside your environment — narrow data contract, redaction by default — ending in an APRA/ISO 42001 evidence pack your risk function reviews.</p>
+      </article>
+      <article class="tile">
+        <span class="tile__tag">Three seats · FY27</span>
+        <h3 class="tile__name">Design partnership</h3>
+        <p class="tile__desc">A working seat inside the build: quarterly Design Council, assessment credits, and today's pricing locked for three years post-GA. Qualified, not queued.</p>
+      </article>
+    </div>
+
+    <!-- Why us: credibility close -->
+    <div class="whyus" id="contact">
+      <div class="whyus__stat">
+        <span class="whyus__num">Decades</span>
+        <span class="whyus__unit">of experience</span>
+      </div>
+      <div>
+        <p class="whyus__lead">Built from decades inside the rooms where these decisions are made — architecture boards, risk committees, commercial committees. <strong>We build for the people accountable for the estate, not for the demo.</strong></p>
+        <div class="whyus__tags">
+          <span class="tag">Financial Services</span>
+          <span class="tag">Banking</span>
+          <span class="tag">Retail</span>
+          <span class="tag">Healthcare</span>
+          <span class="tag">Education</span>
+          <span class="tag">Utilities</span>
+          <span class="tag">India</span>
+          <span class="tag">Australia</span>
+          <span class="tag">United States</span>
+          <span class="tag">South-East Asia</span>
+        </div>
+        <div class="hero__cta" style="margin-top:var(--gai-space-5)">
+          <a class="btn btn-ink" href="https://www.linkedin.com/in/duanegomes/" rel="noopener">LinkedIn →</a>
+          <a class="btn btn-outline" href="mailto:duane@getamazednow.ai">Email me →</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <img class="footer__mark" src="assets/logo/Getamazednow-AI-Icon-Monochrome-White.svg" alt="" />
+      <span class="footer__name">Getamazednow AI</span>
+      <span class="footer__byline">A Getamazednow company</span>
+      <span class="footer__tagline"><span class="assure assure--on-ink">Getamazednow Assure</span> · see it, prove it, stand behind it</span>
+      <span class="footer__spacer"></span>
+      <nav class="footer__links">
+        <a href="trust.html">Trust &amp; Security</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://www.linkedin.com/in/duanegomes/" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/getamazednow" rel="noopener">GitHub</a>
+        <a href="https://medium.com/@duane.gomes" rel="noopener">Medium</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
